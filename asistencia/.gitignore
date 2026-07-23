@@ -1,0 +1,52 @@
+# .gitignore - Archivos y carpetas a excluir de Git
+
+# 2. DEPENDENCIAS DE COMPOSER
+# Carpeta vendor - Se instala con 'composer install'
+vendor/
+
+# 3. ARCHIVOS DE USUARIOS (DATOS)
+# Archivos subidos por usuarios (justificantes)
+uploads/
+
+# 4. ARCHIVOS DE LOG
+*.log
+*.log.*
+error_log
+
+# 5. ARCHIVOS DE SISTEMA
+# Windows
+Thumbs.db
+desktop.ini
+
+# Mac
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Linux
+.directory
+*.swp
+*.swo
+*~
+
+# 6. ARCHIVOS TEMPORALES
+*.tmp
+*.cache
+*.bak
+*.backup
+*.old
+
+# 7. ARCHIVOS DE IDE / EDITOR
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+
+# 8. REPORTES GENERADOS
+exports/*.xlsx
+exports/*.csv
+exports/*.pdf
+
+# 9. ARCHIVOS DE COMPOSER (LOCK es necesario subirlo)
+# NO incluir: composer.lock

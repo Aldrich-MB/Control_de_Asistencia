@@ -47,7 +47,7 @@ Paso 1: Clonar el repositorio
 -------------------------------
 Clona el repositorio en tu máquina local:
 
-git clone https://github.com/tu-usuario/asistencia.git
+git clone https://github.com/Aldrich-MB/Control_de_Asistencia.git)
 cd asistencia
 
 

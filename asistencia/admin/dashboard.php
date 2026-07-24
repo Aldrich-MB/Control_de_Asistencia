@@ -1,5 +1,5 @@
 <?php
-// admin/dashboard.php - Panel principal de administración (PROTEGIDO - solo admins)
+// Panel principal de administración 
 require_once '../includes/config.php';
 
 // Forzar zona horaria en MySQL
@@ -213,8 +213,8 @@ try {
         <h1 style="font-size: 24px; font-weight: 600; margin-bottom: 4px;">Bienvenido, <?php echo htmlspecialchars($admin_usuario); ?></h1>
         <p style="color: var(--gris-400);">Resumen de asistencia del día</p>
     </div>
-
-    <!-- ==================== TARJETAS DE ESTADÍSTICAS ==================== -->
+ 
+    <!-- TARJETAS DE ESTADÍSTICAS -->
     <div class="stats-grid">
         <div class="stat-card"><div class="stat-label">👥 Trabajadores activos</div><div class="stat-value"><?php echo $stats['total_trabajadores']; ?></div></div>
         <div class="stat-card"><div class="stat-label">📋 Registros hoy</div><div class="stat-value"><?php echo $stats['registros_hoy']; ?></div></div>
@@ -243,7 +243,7 @@ try {
         </div>
     </div>
 
-    <!-- ==================== RESUMEN DIARIO ==================== -->
+    <!-- RESUMEN DIARIO -->
     <div class="card">
         <div class="card-title">📊 Resumen de asistencia - Hoy</div>
         <?php if (empty($resumen_diario)): ?>
@@ -308,7 +308,7 @@ try {
         <?php endif; ?>
     </div>
 
-    <!-- ==================== ÚLTIMOS REGISTROS ==================== -->
+    <!-- ÚLTIMOS REGISTROS -->
     <div class="card">
         <div class="card-title">🕐 Últimos registros</div>
         <?php if (empty($ultimos_registros)): ?>
